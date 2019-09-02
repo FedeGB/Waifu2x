@@ -17,9 +17,9 @@ class tofp16(nn.Module):
 
     def forward(self, input):
         #if input.is_cuda:
-        return input.half()
+        #return input.half()
         #else:  # PyTorch 1.0 doesn't support fp16 in CPU
-            #return input.float()
+        return input.float()
 
 
 def BN_convert_float(module):
